@@ -1,6 +1,8 @@
 def GetText(url):
 	# GetText takes a webpage's URL (as a string), parses the html, and outputs a string containing the words from the webpage. This function requires the BeautifulSoup and requests packages. 
 
+
+#houjlhadh
 	# Set env
 	import requests
 	from bs4 import BeautifulSoup
