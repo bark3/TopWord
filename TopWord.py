@@ -1,3 +1,5 @@
+# TopWord V1 outputs a .txt file containing a list of the n most frequently used words from a website. The list lenght (n) website's url are set in the set vars section. 
+
 # Set Env
 import spacy
 from collections import Counter
@@ -23,12 +25,7 @@ words = [token.text for token in doc if token.is_punct != True and token.is_spac
 freq = Counter(words)
 list = freq.most_common(n)
 WordList = str(list).strip('[]')
-
-# Format list for print
-# for x in list 
 	
-
-
 # print list to .txt
 file = open('MostCommonWords.txt','w+')
 file.write(WordList) 
